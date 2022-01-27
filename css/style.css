@@ -1,0 +1,128 @@
+:root{
+--strong-cyan: hsl(171, 66%, 44%);
+--light-blue: hsl(233, 100%, 69%);
+--dark-grayish-blue: hsl(210, 10%, 33%);
+--grayish-blue: hsl(201, 11%, 66%);
+}
+/* ---------Configurações mais gerais------------*/
+html{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+header{
+    background-image: url(../images/bg-header-mobile.png);
+    background-size: cover;
+}
+/* -------------cabeçalho header----------- */
+button.btn{
+    border-radius: 30px;
+    color: white;
+    font-weight: 600;
+    max-width: 250px;
+}
+button.btn:hover{
+    opacity: 0.7;
+}
+button.btn:nth-of-type(1){
+    background-color: var(--strong-cyan);
+    box-shadow: 2px 2px 0 var(--strong-cyan);
+}
+button.btn:nth-of-type(2){
+    background-color: var(--light-blue);
+    box-shadow: 2px 2px 0 var(--light-blue);
+}
+button.btn:nth-of-type(3){
+    background-color: var(--strong-cyan);
+    box-shadow: 2px 2px 0 var(--strong-cyan);
+}
+button.btn:nth-of-type(4){
+    background-color: var(--light-blue);
+    box-shadow: 2px 2px 0 var(--light-blue);
+}
+
+header img.w-25{
+    max-width: 150px;
+}
+/* section1 --------------------------------------*/
+
+/* ------------tipografia -------------------------- */
+h1,
+h2,
+h3,
+h5{
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+p{
+    color: var(--grayish-blue);
+}
+
+/*footer--------------------*/
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer div.rodape img{
+    width: 50px;
+    margin: 30px 5px;
+}
+.rodape{
+    margin-top: 30px;
+}
+
+
+    .rodape div.secao{
+        margin: 0 40px;
+    }
+    .rodape div.secao h5{
+        font-weight: 500;
+        font-size: 0.9rem;
+    }
+    .rodape div.secao:nth-of-type(4){
+        display: flex;   
+    }
+    .rodape div.secao:nth-of-type(4) img{
+        width: 35px;
+        margin: 5px 10px;
+    }
+
+@media (min-width:768px) {
+    header{
+        background-image: url(../images/bg-header-desktop.png);
+        background-size: cover;
+    }
+    main section p.mx-4.mx-md-5,
+    main section p.mx-5.mb-4{
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        justify-self: center;
+        align-self: center;
+    }
+    .rodape{
+        margin-top: 30px;
+        margin-left: 10px;
+        flex-direction: row;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .rodape div.secao{
+        margin-top: 35px;
+    }
+    .rodape div.secao:nth-of-type(4){
+        justify-self: flex-end;
+        margin-left: 700px;
+        
+    }
+
+
+
+    
+}
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
